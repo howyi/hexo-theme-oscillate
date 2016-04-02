@@ -1,0 +1,12 @@
+<div class="alignleft">
+  <a href="<%- url_for() %>" ><h3><%= config.title %></h3></a>
+</div>
+<nav id="main-nav">
+  <ul>
+    <% for (var i in theme.menu){ %>
+      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+    <% } %>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
